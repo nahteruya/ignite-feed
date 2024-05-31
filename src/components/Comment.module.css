@@ -1,0 +1,81 @@
+.comment {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.comment > img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.commentBox {
+  background: var(--gray-700);
+  padding: 1rem 1rem 1.5625rem;
+  border-radius: 8px;
+}
+
+.commentBox header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.authorInfo strong {
+  display: block;
+  color: var(--gray-100);
+  line-height: 1.6;
+}
+
+.authorInfo span {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--gray-400);
+  line-height: 1.6;
+}
+
+.commentBox header button {
+  background: transparent;
+  line-height: 0;
+  border: none;
+  color: var(--gray-100);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.commentBox header button:hover {
+ color: var(--red-500);
+}
+
+.commentMain footer {
+  margin-top: 1rem;
+}
+
+.commentMain footer button {
+  background: transparent;
+  border: none;
+  color:var(--grey-400);
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: color 0.1s;
+}
+
+.commentMain footer button:hover {
+  color: var(--gray-100);
+  
+}
+
+.commentMain footer button svg {
+  margin-right: 0.5rem;
+}
+
+.commentMain footer button span::before {
+  content: '\2022';
+  padding: 0 0.25rem;
+}

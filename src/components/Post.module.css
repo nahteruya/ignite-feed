@@ -1,0 +1,121 @@
+.post {
+  background: var(--gray-800);
+  border-radius: 8px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.post > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.author {
+  display: flex;
+  gap: 1rem;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorInfo strong {
+  color: var(--gray-100);
+  line-height: 1.6;
+}
+
+.authorInfo span {
+  font-size: 0.875rem;
+  color: var(--gray-400);
+  line-height: 1.6;
+}
+
+.post > header time {
+  font-size: 0.875rem;
+  color: var(--gray-400);
+}
+
+.post .content {
+  font-size: 1rem;
+  color: var(--gray-300);
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.content p a {
+  color: var(--green-500);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.content p a:hover {
+  color: var(--green-300);
+}
+
+.post .commentForm {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--gray-600);
+  margin: 1.5rem 0;
+  padding-top: 1.4rem;
+  gap: 1rem;
+}
+
+.commentForm > strong {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.commentForm textarea {
+  height: 6rem;
+  background: var(--gray-900);
+  border: none;
+  border-radius: 8px;
+  padding: 0.8125rem 1rem;
+  font-size: 1rem;
+  color: var(--gray-100);
+  line-height: 1.4;
+  resize: none;
+}
+
+.commentForm footer {
+  visibility: hidden;
+  max-height: 0;
+}
+
+.commentForm:focus-within footer {
+  visibility: visible;
+  max-height: none;
+}
+
+.commentForm button[type="submit"] {
+  width: fit-content;
+  background: var(--green-500);
+  padding: 1rem 1.5rem;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.commentForm button[type="submit"]:not(:disabled):hover {
+  background: var(--green-300);
+}
+
+.commentForm button[type="submit"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.commentList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
